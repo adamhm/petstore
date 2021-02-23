@@ -1,5 +1,6 @@
 package com.codecool.petstore.model;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class AnimalFood {
@@ -8,9 +9,9 @@ public class AnimalFood {
     private String name;
     private Brand brand;
     private AnimalFoodType type;
-    private Date expirationDate;
+    private Calendar expirationDate;
 
-    public AnimalFood(long id, String name, Brand brand, AnimalFoodType type, Date expirationDate) {
+    public AnimalFood(long id, String name, Brand brand, AnimalFoodType type, Calendar expirationDate) {
         this.id = id;
         this.name = name;
         this.brand = brand;
@@ -46,11 +47,11 @@ public class AnimalFood {
         this.type = type;
     }
 
-    public Date getExpirationDate() {
+    public Calendar getExpirationDate() {
         return expirationDate;
     }
 
-    public void setExpirationDate(Date expirationDate) {
+    public void setExpirationDate(Calendar expirationDate) {
         this.expirationDate = expirationDate;
     }
 }

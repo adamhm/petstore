@@ -11,9 +11,12 @@ public interface AnimalFoodDao {
 
     public Optional<AnimalFood> findById(long id);
 
+    public List<AnimalFood> findAll();
+
     public List<AnimalFood> findAnimalFoodOnStock();
 
     public List<AnimalFood> findByBrand(Brand brand);
 
     public List<AnimalFood> findByType(AnimalFoodType type);
+
 }

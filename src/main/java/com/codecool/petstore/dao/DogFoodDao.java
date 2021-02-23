@@ -8,8 +8,6 @@ import java.util.Optional;
 
 public interface DogFoodDao extends AnimalFoodDao {
 
-    public List<DogFood> findAll();
-
     public List<DogFood> findAllDogFoodByBrand(Brand brand);
 
     public Optional<DogFood> save(DogFood dogFood);
